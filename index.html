@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lili Takahashi</title>
+</head>
+<body>
+    <div class="container">
+        <img class="profile" src="images/profile.jpg" alt="Lili Takahashi">
+
+        <h1>Lili Takahashi</h1>
+        <p class="subtitle">Web Developer</p>
+
+        <div class="info-container">
+
+            <div class="social-media-container">
+                <a href="https://github.com/lilitakahashi" target="_blank">
+                    <i data-feather="github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/lilitakahashi/" target="_blank"><i data-feather="linkedin"></i></a>
+                <a href="https://t.me/lilitakahashi" target="_blank"><i data-feather="send"></i></a>
+            </div>
+
+            <div class="content">                
+                <div class="main-content">                    
+                    <a href="https://lilitakahashi.com/" class="link highlight" taget="_blank">
+                        Portfolio (Coming soon)
+                    </a>
+                    <a class="link highlight" href="https://codepen.io/lilitakahashi" target="_blank">
+                        My Codepen
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<script src="https://unpkg.com/feather-icons"></script>
+<script>
+    feather.replace();
+</script>
+
+<script>
+    const setupButton = document.getElementById("setup-button");
+    const goBackButton = document.getElementById("go-back-button");
+
+    setupButton.addEventListener("click", showContent);
+    goBackButton.addEventListener("click", hideContent);
+
+    function showContent() {
+    document.getElementById("secondary-content").classList.remove("hide");
+    document.getElementById("secondary-content").classList.add("show");
+    }
+
+    function hideContent() {
+    document.getElementById("secondary-content").classList.remove("show");
+    document.getElementById("secondary-content").classList.add("hide");
+    }
+
+</script>
+</body>
+</html>
